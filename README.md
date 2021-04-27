@@ -1,2 +1,3 @@
-# terraform-test
-a repo to test terraform ability
+# terraform-aws-cloudconformity
+IAM role and policies for cloudconformity
+Needs some review
