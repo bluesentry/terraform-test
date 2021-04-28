@@ -13,6 +13,8 @@ plan.out
 *.zip
 
 .idea
+*.idea
 .iml
+*.iml
 
 .DS_Store
