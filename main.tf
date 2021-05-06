@@ -3,7 +3,8 @@ resource "aws_iam_policy" "cloudconformity_1" {
   policy= data.aws_iam_policy_document.cloudconformity_1.json
 }
 
-resource "aws_iam_policy" "cloudconformity_2" { name   = "cloudconformity_2" policy = data.aws_iam_policy_document.cloudconformity_2.json
+resource "aws_iam_policy" "cloudconformity_2" { 
+  name   = "cloudconformity_2" policy = data.aws_iam_policy_document.cloudconformity_2.json
 }
 
 resource "aws_iam_role" "this" {
@@ -34,8 +35,7 @@ resource "aws_iam_role" "this" {
 resource "aws_iam_role_policy_attachment" "cloudconformity_1" {
   role       = aws_iam_role.this.name
   policy_arn = aws_iam_policy.cloudconformity_1.arn
-
-      }
+}
 
 resource "aws_iam_role_policy_attachment" "cloudconformity_2" {
   role       = aws_iam_role.this.name
