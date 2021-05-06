@@ -4,7 +4,8 @@ resource "aws_iam_policy" "cloudconformity_1" {
 }
 
 resource "aws_iam_policy" "cloudconformity_2" { 
-  name   = "cloudconformity_2" policy = data.aws_iam_policy_document.cloudconformity_2.json
+  name   = "cloudconformity_2" 
+  policy = data.aws_iam_policy_document.cloudconformity_2.json
 }
 
 resource "aws_iam_role" "this" {
